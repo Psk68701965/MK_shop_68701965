@@ -154,7 +154,7 @@ export default {
     // ✅ เปิด modal แก้ไขสินค้า
     const openEditModal = (category) => {
       isEditMode.value = true;
-      editForm.value = { ...category, category_id: categorys.category_id };
+      editForm.value = { ...category, category_id: category.category_id };
       newImageFile.value = null;
 
       // เคลียร์ input file
